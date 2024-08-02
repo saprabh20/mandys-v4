@@ -17,7 +17,7 @@ const Hero = () => {
                         data-carousel-item
                     >
                         <img
-                            src="1.jpg"
+                            src="https://stjrdjxugpuvmvhqobik.supabase.co/storage/v1/object/sign/products/Handicraft%20Janpath/cropped-image%20(1).png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0cy9IYW5kaWNyYWZ0IEphbnBhdGgvY3JvcHBlZC1pbWFnZSAoMSkucG5nIiwiaWF0IjoxNzIyNTg4NjQ4LCJleHAiOjE3NTQxMjQ2NDh9.wchcFSUoS_uEw74ysAHXbnruU_6KCNX9oyYj1kKix6c&t=2024-08-02T08%3A50%3A45.710Z"
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="..."
                         />
@@ -28,7 +28,7 @@ const Hero = () => {
                         data-carousel-item
                     >
                         <img
-                            src="2.jpg"
+                            src="https://stjrdjxugpuvmvhqobik.supabase.co/storage/v1/object/sign/products/Handicraft%20Janpath/cropped-image%20(14).png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0cy9IYW5kaWNyYWZ0IEphbnBhdGgvY3JvcHBlZC1pbWFnZSAoMTQpLnBuZyIsImlhdCI6MTcyMjU4ODcwNCwiZXhwIjoxNzU0MTI0NzA0fQ.mCbORhNznXiQXEoo2m_x3ld2O1tfVO5QJsv1C8D5MrA&t=2024-08-02T08%3A51%3A41.282Z"
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="..."
                         />
@@ -39,7 +39,7 @@ const Hero = () => {
                         data-carousel-item
                     >
                         <img
-                            src="3.jpg"
+                            src="https://stjrdjxugpuvmvhqobik.supabase.co/storage/v1/object/sign/products/Handicraft%20Janpath/cropped-image%20(2).png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0cy9IYW5kaWNyYWZ0IEphbnBhdGgvY3JvcHBlZC1pbWFnZSAoMikucG5nIiwiaWF0IjoxNzIyNTg4NzM3LCJleHAiOjE3NTQxMjQ3Mzd9.CCJfL5D8sorJwi0LEpmsTvbFAZKHyIZ-al5sw-2-PVU&t=2024-08-02T08%3A52%3A14.663Z"
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="..."
                         />
@@ -50,7 +50,7 @@ const Hero = () => {
                         data-carousel-item
                     >
                         <img
-                            src="4.jpg"
+                            src="https://stjrdjxugpuvmvhqobik.supabase.co/storage/v1/object/sign/products/pball.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0cy9wYmFsbC5qcGciLCJpYXQiOjE3MjI1ODg3NzMsImV4cCI6MTc1NDEyNDc3M30.yvvGwRuDBitQAoQqoQZhmkgUuIzfm63xRc_Zz1p3FEw&t=2024-08-02T08%3A52%3A50.099Z"
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="..."
                         />
@@ -61,7 +61,7 @@ const Hero = () => {
                         data-carousel-item
                     >
                         <img
-                            src="5.jpg"
+                            src="https://stjrdjxugpuvmvhqobik.supabase.co/storage/v1/object/sign/products/pball.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0cy9wYmFsbC5qcGciLCJpYXQiOjE3MjI1ODg3NzMsImV4cCI6MTc1NDEyNDc3M30.yvvGwRuDBitQAoQqoQZhmkgUuIzfm63xRc_Zz1p3FEw&t=2024-08-02T08%3A52%3A50.099Z"
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="..."
                         />
@@ -157,7 +157,8 @@ const Hero = () => {
             </div>
             <div className="absolute flex justify-center items-center flex-col z-30 text-3xl md:text-5xl font-semibold md:font-bold text-white">
                 <div className="mb-8 px-12 md:px-48 font-extrabold text-center">
-                    Elevate Your Style: Explore Our Exclusive Jewellery Collections
+                    Elevate Your Style: Explore Our Exclusive Jewellery
+                    Collections
                 </div>
                 <Link
                     to={"/products"}
