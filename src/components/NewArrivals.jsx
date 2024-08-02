@@ -9,7 +9,7 @@ const NewArrivals = () => {
           <div className="grid grid-cols-2 px-4 gap-4 md:grid-cols-4 md:gap-6 md:px-32">
               <div className="rounded-lg border border-gray-200 shadow-xm hover:shadow-xl">
                   <div>
-                      <img className="rounded-t-lg" src="hero1.jpg" />
+                      <img className="rounded-t-lg" src="1.jpg" />
                       <div className="pl-2">
                           <div className="py-2 text-lg">Golden Hoops</div>
                           <div className="text-slate-900 text-sm pb-2 flex">
@@ -55,7 +55,7 @@ const NewArrivals = () => {
               </div>
               <div className="rounded-lg border border-gray-200 shadow-xm hover:shadow-xl">
                   <div>
-                      <img className="rounded-t-lg" src="hero2.jpg" />
+                      <img className="rounded-t-lg" src="2.jpg" />
                       <div className="pl-2">
                           <div className="py-2 text-lg font-normal">
                               Golden Hoops
