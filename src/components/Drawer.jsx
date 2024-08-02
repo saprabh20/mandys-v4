@@ -22,7 +22,7 @@ const Drawer = () => {
             {/* drawer component */}
             <div
                 id="drawer-navigation"
-                className="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64"
+                className="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64"
                 tabIndex={-1}
                 aria-labelledby="drawer-navigation-label"
             >
@@ -70,7 +70,7 @@ const Drawer = () => {
                         </li>
                         <li>
                             <Link
-                                to={"user"}
+                                to={"/about"}
                                 className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
                             >
                                 <div className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900">
@@ -83,7 +83,7 @@ const Drawer = () => {
                         </li>
                         <li>
                             <Link
-                                to={"/products"}
+                                to={"/contact"}
                                 className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"
                             >
                                 <svg

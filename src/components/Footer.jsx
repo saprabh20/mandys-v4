@@ -3,7 +3,7 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
     return (
-        <div className="bg-gray-400 text-white flex justify-center items-center flex-col py-6">
+        <div className="bg-gray-600 text-white flex justify-center items-center flex-col py-6">
             <div className="flex pb-2">
                 <div className="px-2 hover:text-fuchsia-500">
                     <a
@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
             </div>
             <p>&copy; 2024 Mandy's Store. All rights reserved.</p>
-            <p>by Diksha & Saprabh</p>
+            <p>developed by Saprabh Anand</p>
         </div>
     );
 };
