@@ -1,14 +1,14 @@
 import React from "react";
-import { BsBag, BsPerson } from "react-icons/bs";
+import { BsBag } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import Drawer from "./Drawer";
-import { BiUser } from "react-icons/bi";
 
+import { BiUser } from "react-icons/bi";
+import SideMenu from "./SideMenu";
 const Navbar = ({ cart, setCart }) => {
     return (
         <div className="flex justify-center md:justify-between items-center h-16 px-6 md:px-32 text-lg">
             <div className="md:hidden w-20 flex justify-start">
-                <Drawer />
+                <SideMenu />
             </div>
             <div className="flex items-center justify-center">
                 <a href="/">
