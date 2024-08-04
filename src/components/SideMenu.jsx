@@ -1,13 +1,16 @@
-"use client";
-
 import { Drawer, Sidebar } from "flowbite-react";
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { GiHeartEarrings } from "react-icons/gi";
 import { HiHome, HiLogin, HiUsers } from "react-icons/hi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import LoginButton from "./LoginButton";
+import { useAuth0 } from "@auth0/auth0-react";
+import LogoutButton from "./LogoutButton";
+import Profile from "./Profile";
 
 const SideMenu = () => {
+    const { user, isAuthenticated, isLoading } = useAuth0();
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClose = () => setIsOpen(false);
@@ -45,15 +48,6 @@ const SideMenu = () => {
                                         </Sidebar.Item>
                                         <Sidebar.Item
                                             className="text-lg font-normal hover:text-gray-950 hover:font-semibold"
-                                            href="/signin"
-                                            icon={HiLogin}
-                                        >
-                                            Sign in
-                                        </Sidebar.Item>
-                                    </Sidebar.ItemGroup>
-                                    <Sidebar.ItemGroup>
-                                        <Sidebar.Item
-                                            className="text-lg font-normal hover:text-gray-950 hover:font-semibold"
                                             href="/about"
                                             icon={FaUser}
                                         >
@@ -65,6 +59,30 @@ const SideMenu = () => {
                                             icon={HiUsers}
                                         >
                                             Contact
+                                        </Sidebar.Item>
+                                    </Sidebar.ItemGroup>
+                                    <Sidebar.ItemGroup>
+                                        {isAuthenticated ? (
+                                            <Sidebar.Item
+                                                className="text-lg font-normal hover:text-gray-950 hover:font-semibold"
+                                                href="/user"
+                                                icon={() => (
+                                                    <Profile size={6} />
+                                                )}
+                                            >
+                                                Profile
+                                            </Sidebar.Item>
+                                        ) : null}
+                                        <Sidebar.Item
+                                            className="text-lg font-normal hover:text-gray-950 hover:font-semibold"
+                                            href="/signin"
+                                            icon={HiLogin}
+                                        >
+                                            {isAuthenticated ? (
+                                                <LogoutButton />
+                                            ) : (
+                                                <LoginButton />
+                                            )}
                                         </Sidebar.Item>
                                     </Sidebar.ItemGroup>
                                 </Sidebar.Items>
