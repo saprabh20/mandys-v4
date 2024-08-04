@@ -75,7 +75,6 @@ const SideMenu = () => {
                                         ) : null}
                                         <Sidebar.Item
                                             className="text-lg font-normal hover:text-gray-950 hover:font-semibold"
-                                            href="/signin"
                                             icon={HiLogin}
                                         >
                                             {isAuthenticated ? (
