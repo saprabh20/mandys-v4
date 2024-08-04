@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import AllProducts from "./pages/AllProducts";
 import Cart from "./pages/Cart";
 import User from "./pages/User";
-import Signin from "./pages/Signin";
-import Signup from "./pages/Signup";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
 import { ToastContainer } from "react-toastify";
@@ -20,7 +18,7 @@ const App = () => {
         <div>
             <ToastContainer />
             <BrowserRouter>
-                <Navbar cart={cart} setCart={setCart} />
+                <Navbar cart={cart} />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/products" element={<AllProducts />} />
@@ -33,8 +31,8 @@ const App = () => {
                         element={<Cart cart={cart} setCart={setCart} />}
                     />
                     <Route path="/user" element={<User />} />
-                    <Route path="/signin" element={<Signin />} />
-                    <Route path="/signup" element={<Signup />} />
+                    {/* <Route path="/signin" element={<Signin />} /> */}
+                    {/* <Route path="/signup" element={<Signup />} /> */}
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/contact" element={<ContactPage />} />
                 </Routes>
