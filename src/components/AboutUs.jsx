@@ -22,12 +22,12 @@ const AboutUs = () => {
               </div>
               <div className="grid grid-cols-2 gap-4 mt-8">
                   <img
-                      className="w-full rounded-lg"
+                      className="w-full rounded-lg hover:rotate-2"
                       src="about1.jpg"
                       alt="office content 1"
                   />
                   <img
-                      className="mt-4 w-full lg:mt-10 rounded-lg"
+                      className="mt-4 w-full lg:mt-10 rounded-lg hover:rotate-2"
                       src="about2.jpg"
                       alt="office content 2"
                   />

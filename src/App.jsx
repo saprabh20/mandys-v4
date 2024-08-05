@@ -14,6 +14,7 @@ import ContactPage from "./pages/ContactPage";
 
 const App = () => {
     const [cart, setCart] = useState([]);
+    const [products, setProducts] = useState([]);
     return (
         <div>
             <ToastContainer />
@@ -21,9 +22,17 @@ const App = () => {
                 <Navbar cart={cart} />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/products" element={<AllProducts />} />
                     <Route
-                        path="/product"
+                        path="/products"
+                        element={
+                            <AllProducts
+                                products={products}
+                                setProducts={setProducts}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/products/:id"
                         element={<Product setCart={setCart} />}
                     />
                     <Route
