@@ -2,7 +2,7 @@ import React from "react";
 
 const BestSellers = () => {
     return (
-        <div className="pb-6">
+        <div className="py-6  border-b-2">
             <div className="px-4 pb-4 text-2xl font-semibold md:text-3xl md:font-bold md:px-32 text-center">
                 Best Sellers
             </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import Products from "../components/Products";
 
-const AllProducts = () => {
+const AllProducts = ({products, setProducts}) => {
     return (
         <div>
-            <Products />
+            <Products products={products} setProducts={setProducts}/>
         </div>
     );
 };

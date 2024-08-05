@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
             </div>
             <p>&copy; 2024 Mandy's Store. All rights reserved.</p>
-            <p>developed by Saprabh Anand</p>
+            <p>by Diksha and Saprabh</p>
         </div>
     );
 };
