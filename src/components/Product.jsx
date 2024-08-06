@@ -102,11 +102,17 @@ const Product = ({ setCart }) => {
                                     </button>
                                 </div>
                                 <hr className="my-6 md:my-8 border-gray-200" />
-                                <p className="mb-6 text-gray-500">
+                                <p className="mb-2 text-gray-900 text-base">
                                     {product.description}
                                 </p>
-                                <p className="text-gray-500">
-                                    {product.description}
+                                <p className="mb-2 text-gray-800 text-sm">
+                                    {product.features}
+                                </p>
+                                <p className="mb-2 text-gray-700 text-sm">
+                                    {product.dimensions}
+                                </p>
+                                <p className="mb-2 text-gray-600 text-sm">
+                                    {product.care_instructions}
                                 </p>
                             </div>
                         </div>
